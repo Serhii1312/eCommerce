@@ -1,0 +1,46 @@
+.header-top {
+    margin: 0px 0px 72px 0px;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .header-top a {
+    text-decoration: none;
+  }
+  
+  .header-contacts {
+    display: flex;
+    gap: 33px;
+  }
+  
+  .header-contacts a {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #151515;
+  }
+  
+  .header-links {
+    display: flex;
+    gap: 38px;
+  }
+  
+  
+  .header-middle {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+  }
+  
+  .header-middle-input {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    width: 250px;
+    padding: 10px;
+    background: #F9F9F9;
+    border: 1px solid #D1D1D1;
+    border-radius: 12px;
+    text-align: center;
+  }
