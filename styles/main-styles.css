@@ -52,3 +52,7 @@ dd {
     line-height: 16px;
     color: #6A983C;
 }
+
+.header-top a {
+  text-decoration: none;
+}
