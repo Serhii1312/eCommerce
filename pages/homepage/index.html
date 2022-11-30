@@ -10,6 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https: //fonts.googleapis.com/css2? family= Roboto:wght@400;500;700 & display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <title>Document</title>
 </head>
@@ -24,9 +27,9 @@
                         <a href="#">info@freshnesecom.com</a>
                     </div>
                     <div class="header-links">
-                        <a href="#" class="link-green">Blog</a>
-                        <a href="#" class="link-green">About Us</a>
-                        <a href="#" class="link-green">Careers</a>
+                        <a href="#" class="header-link">Blog</a>
+                        <a href="#" class="header-link">About Us</a>
+                        <a href="#" class="header-link">Careers</a>
                     </div>
                 </div>
                 <div class="header-middle">
@@ -34,18 +37,33 @@
                         <img src="/img/Freshnesecom.jpg" class="header-img" alt="word">
                     </a>
                     <form action="#" method="post" enctype="multipart/form-data">
-                        <div class="input-search">
+                        <div class="search-input-wrapper">
+                            <div class="search-input-list">
+                                 <span class="input-list">All categories</span>
+                            </div>
                             <input type="text" class="search-input" id="text" name="input-text" placeholder="Search Products, categories ...">
+                            <button type="submit" class="search-input-button">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
                         </div>
                     </form>
                     <div class="header-icons">
-                        <i class="fa-light fa-user fa-icons"></i>
-                        <i class="fa-thin fa-basket-shopping"></i>
-                        <i class="fa-sharp fa-solid fa-house"></i>
+                        <i class="fa-solid fa-user header-icon"></i>
+                        <i class="fa-solid fa-bag-shopping header-icon"></i>
+
                     </div>
                 </div>
                 <div class="header-bottom">
-
+                    <ul class="header-lists">
+                        <li class="header-list">Bakery</li>
+                        <li class="header-list">Fruit and vegetables</li>
+                        <li class="header-list">Meat and fish</li>
+                        <li class="header-list">Drinks</li>
+                        <li class="header-list">Kitchen</li>
+                        <li class="header-list">Special nutrition</li>
+                        <li class="header-list">Baby</li>
+                        <li class="header-list">Pharmacy</li>
+                    </ul>
                 </div>
             </header>
             <main class="main">
