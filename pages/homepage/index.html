@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="/styles/header.css">
+    <link rel="stylesheet" href="/styles/main-card-styles.css">
     <link rel="stylesheet" href="/styles/main-styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,9 +40,11 @@
                     <form action="#" method="post" enctype="multipart/form-data">
                         <div class="search-input-wrapper">
                             <div class="search-input-list">
-                                 <span class="input-list">All categories</span>
+                                 <span class="search-list">All categories</span>
                             </div>
-                            <input type="text" class="search-input" id="text" name="input-text" placeholder="Search Products, categories ...">
+                            <div class="input-wrapper">
+                                <input type="text" class="search-input" id="text" name="input-text" placeholder="Search Products, categories ...">
+                            </div>
                             <button type="submit" class="search-input-button">
                                 <i class="fa-solid fa-magnifying-glass"></i>
                             </button>
@@ -54,20 +57,38 @@
                     </div>
                 </div>
                 <div class="header-bottom">
-                    <ul class="header-lists">
-                        <li class="header-list">Bakery</li>
-                        <li class="header-list">Fruit and vegetables</li>
-                        <li class="header-list">Meat and fish</li>
-                        <li class="header-list">Drinks</li>
-                        <li class="header-list">Kitchen</li>
-                        <li class="header-list">Special nutrition</li>
-                        <li class="header-list">Baby</li>
-                        <li class="header-list">Pharmacy</li>
+                    <ul class="category-lists">
+                        <li class="category-list"><a href="#">Bakery</a></li>
+                        <li class="category-list"><a href="#">Fruit and vegetables</a></li>
+                        <li class="category-list"><a href="#">Meat and fish</a></li>
+                        <li class="category-list"><a href="#">Drinks</a></li>
+                        <li class="category-list"><a href="#">Kitchen</a></li>
+                        <li class="category-list"><a href="#">Special nutrition</a></li>
+                        <li class="category-list"><a href="#">Baby</a></li>
+                        <li class="category-list"><a href="#">Pharmacy</a></li>
                     </ul>
                 </div>
             </header>
             <main class="main">
+                <div class="main-card top-card">
+                    <div class="side-menu">
+                        <h3 class="menu-tittle">Category menu</h3>
+                        <ul class="category-menu">
+                            <li class="menu-list"><a href="#">Bakery</a></li>
+                            <li class="menu-list"><a href="#">Fruit and vegetables</a></li>
+                            <li class="menu-list"><a href="#">Meat and fish</a></li>
+                            <li class="menu-list"><a href="#">Drinks</a></li>
+                            <li class="menu-list"><a href="#">Kitchen</a></li>
+                        </ul>
+                    </div>
+                <button type="submit" class="menu-button">More categories</button>   
+                </div>
+                <div class="main-card middle-card">
 
+                </div>
+                <div class="main-card bottom-card">
+
+                </div>
             </main>
             <footer class="footer">
                 
