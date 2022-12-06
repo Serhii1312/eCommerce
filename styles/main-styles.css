@@ -57,3 +57,62 @@ dd {
 .header-top a {
   text-decoration: none;
 }
+
+.side-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-tittle{
+  padding: 0px 0px 16px 0px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #151515;
+}
+
+.menu-list {
+  padding: 0px 0px 12px 0px;
+  list-style: none;
+}
+
+.category-menu :last-child {
+  padding-bottom: 50px;
+}
+
+.menu-list a {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  text-decoration-line: underline;
+  color: #6A983C;
+}
+
+.menu-button-wrapper {
+  background: #F5F5F5;
+  border-radius: 12px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 22px;
+  color: #151515;
+  padding: 12px 36px 12px 16px;
+  border: none;
+}
+
+.button-wrapper {
+  margin-right: 122px;
+}
+
+.button-menu-arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+}
