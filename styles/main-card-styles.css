@@ -1,5 +1,5 @@
-.main-card {
-    margin: 65px 0px 0px 0px;
+.top-card {
+    margin: 65px 0px 128px 0px;
 }
 
 .card-banner {
@@ -85,6 +85,8 @@
     padding: 3px;
     transform: rotate(-45deg);
 }
+
+
 
 
 
