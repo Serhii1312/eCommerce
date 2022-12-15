@@ -61,6 +61,7 @@ dd {
 .side-menu {
   display: flex;
   flex-direction: column;
+  width: 25%;
 }
 
 .menu-tittle{
@@ -89,6 +90,7 @@ dd {
 }
 
 .menu-button-wrapper {
+  position: relative;
   background: #F5F5F5;
   border-radius: 12px;
   font-family: 'Poppins';
@@ -102,20 +104,30 @@ dd {
   margin-top: 48px;
 }
 
-.button-wrapper-card {
-  margin-right: 122px;
+.button-with-arrow::before,
+.button-with-arrow::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 7px;
+  height: 2px;
+  background-color: black;
+  right: 15px;
 }
 
-.button-menu-arrow {
-  border: solid black;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 3px;
+.button-with-arrow::before {
+  top: 43%;
+  transform: rotate(45deg);
+}
+
+.button-with-arrow::after {
+  bottom: 43%;
   transform: rotate(-45deg);
 }
 
 .middle-card-wrapper {
   display: flex;
+  padding: 70px 0px;
 }
 
 .product-tittle-wrapper {
@@ -132,10 +144,6 @@ dd {
   width: 269px;
   height: 332px;
   padding: 16px;
-}
-
-.button-wrapper-tittle {
-  margin-right: 133px;
 }
 
 .bold-description {
@@ -190,3 +198,73 @@ dd {
   border-radius: 12px;
   padding: 6.5px 12px;
 }
+
+.menu-slider {
+  padding: 65px 0px 0px 0px;
+}
+
+.header-blocks {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 0px 37px 0px;
+}
+
+.bottom-card-wrapper {
+  padding: 70px 0px;
+}
+
+.slider-tittle {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #151515;
+}
+
+.slider-button {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 22px;
+  color: #151515;
+  border: none;
+  padding: 6px 38px 6px 12px;
+}
+
+.slider-button-wrapper {
+  position: relative;
+}
+
+.slider-content-wrapper {
+  display: flex;
+  margin: 41px 0px 90px 0px;
+}
+
+.slider-content {
+  padding: 24px 32px 75px 32px;
+}
+
+.slider-subheading {
+  text-align: center;
+  margin-top: 40px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  color: #A9A9A9;
+}
+
+.slider-text {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+  color: #151515;
+}
+

@@ -1,0 +1,52 @@
+.arrow-right::before,
+.arrow-right::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 7px;
+  height: 2px;
+  background-color: #151515;
+  right: 15px;
+}
+
+.arrow-right::before {
+  top: 43%;
+  transform: rotate(45deg);
+}
+
+.arrow-right::after {
+  bottom: 43%;
+  transform: rotate(-45deg);
+}
+
+.arrow-down::before,
+.arrow-down::after {
+    content: '';
+    position: absolute;
+    display: block;
+    background-color: #6A983C;
+    width: 7px;
+    height: 2px;
+}
+
+.arrow-right-green::before,
+.arrow-right-green::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 7px;
+    height: 2px;
+    background-color: #6A983C;
+    right: 20px;
+}
+
+.arrow-right-green::before {
+    top: 40%;
+    transform: rotate(45deg);
+  }
+  
+  .arrow-right-green::after {
+    bottom: 40%;
+    transform: rotate(-45deg);
+  }
+

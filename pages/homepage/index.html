@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/styles/header.css">
     <link rel="stylesheet" href="/styles/main-card-styles.css">
     <link rel="stylesheet" href="/styles/main-styles.css">
+    <link rel="stylesheet" href="/styles/arrow.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https: //fonts.googleapis.com/css2? family= Roboto:wght@400;500;700 & display=swap" rel="stylesheet">
@@ -20,6 +21,7 @@
 <body>
     <div class="container">
         <div class="main-wrapper">
+            <!-- header start -->
             <header class="header">
                 <div class="header-top">
                     <div class="header-contacts">
@@ -58,20 +60,23 @@
                 </div>
                 <div class="header-bottom">
                     <ul class="category-lists">
-                        <li class="category-list"><a href="#">Bakery</a><span class="arrow-list"></span></li>
-                        <li class="category-list"><a href="#">Fruit and vegetables</a><span class="arrow-list"></span></li>
-                        <li class="category-list"><a href="#">Meat and fish</a><span class="arrow-list"></span></li>
-                        <li class="category-list"><a href="#">Drinks</a><span class="arrow-list"></span></li>
-                        <li class="category-list"><a href="#">Kitchen</a><span class="arrow-list"></span></li>
-                        <li class="category-list"><a href="#">Special nutrition</a><span class="arrow-list"></span></li>
-                        <li class="category-list"><a href="#">Baby</a><span class="arrow-list"></span></li>
-                        <li class="category-list"><a href="#">Pharmacy</a><span class="arrow-list"></span></li>
+                        <li class="category-element arrow-down"><a href="#">Bakery</a></li>
+                        <li class="category-element arrow-down"><a href="#">Fruit and vegetables</a></li>
+                        <li class="category-element arrow-down"><a href="#">Meat and fish</a></li>
+                        <li class="category-element arrow-down"><a href="#">Drinks</a></li>
+                        <li class="category-element arrow-down"><a href="#">Kitchen</a></li>
+                        <li class="category-element arrow-down"><a href="#">Special nutrition</a></li>
+                        <li class="category-element arrow-down"><a href="#">Baby</a></li>
+                        <li class="category-element arrow-down"><a href="#">Pharmacy</a></li>
                     </ul>
                 </div>
             </header>
+            <!-- header end -->
+            <!-- main start -->
             <main class="main">
                 <div class="main-card top-card">
                     <div class="main-card-wrapper">
+                        <!-- side menu start -->
                         <div class="side-menu">
                             <h3 class="menu-tittle">Category menu</h3>
                             <ul class="category-menu">
@@ -82,9 +87,10 @@
                                 <li class="menu-list"><a href="#">Kitchen</a></li>
                             </ul>
                             <div class="button-wrapper-card">
-                                <button type="submit" class="menu-button-wrapper">More categories<span class="button-menu-arrow"></span></span></button>
+                                <button type="submit" class="menu-button-wrapper arrow-right">More categories</button>
                             </div> 
                         </div> 
+                        <!-- side menu end -->
                         <div class="card-banner-wrapper">    
                             <div class="card-banner">
                                 <div class="banner-content">
@@ -92,7 +98,7 @@
                                     <h3 class="card-banner-tittle">Space for heading</h3>
                                 </div>
                                 <div class="card-button-wrapper">
-                                    <button class="button-card">Read recepies <span class="button-card-arrow"></span></button>  
+                                    <button class="button-card">Read recepies</button>  
                                 </div>    
                             </div> 
                             <div class="card-banner">
@@ -101,14 +107,16 @@
                                     <h3 class="card-banner-tittle">Space for heading</h3>
                                 </div>
                                 <div class="card-button-wrapper">
-                                    <button class="button-card">Read recepies <span class="button-card-arrow"></span></button>
+                                    <button class="button-card">Read recepies</button>
                                 </div>
                             </div>
                         </div>
+                        
                     </div>
                 </div>
                 <div class="main-card middle-card">
                    <div class="middle-card-wrapper"> 
+                        <!-- side menu start -->
                         <div class="side-menu">
                             <h3 class="menu-tittle">Best selling products</h3>
                             <ul class="category-menu">
@@ -119,9 +127,10 @@
                                 <li class="menu-list"><a href="#">Baby</a></li>
                             </ul>
                             <div class="button-wrapper-tittle">
-                                <button type="submit" class="menu-button-wrapper">More products<span class="button-menu-arrow"></span></span></button>
+                                <button type="submit" class="menu-button-wrapper arrow-right">More products</button>
                             </div> 
                         </div> 
+                        <!-- side menu end -->
                         <div class="product-tittle-wrapper">
                             <div class="product-tittle-content">
                                 <div class="product-tittle-img">
@@ -169,15 +178,173 @@
                                 </div>
                             </div>
                         </div>
-                   </div>
+                   </div>  
+                   <div class="middle-card-wrapper"> 
+                        <!-- side menu start -->
+                        <div class="side-menu">
+                            <h3 class="menu-tittle">Best from Farmers</h3>
+                            <ul class="category-menu">
+                                <li class="menu-list"><a href="#">Carrots</a></li>
+                                <li class="menu-list"><a href="#">Tomatoes</a></li>
+                                <li class="menu-list"><a href="#">Potatoes</a></li>
+                                <li class="menu-list"><a href="#">Chicken</a></li>
+                                <li class="menu-list"><a href="#">Pork</a></li>
+                            </ul>
+                            <div class="button-wrapper-tittle">
+                                <button type="submit" class="menu-button-wrapper arrow-right">More products</button>
+                            </div> 
+                        </div> 
+                        <!-- side menu end -->
+                        <div class="product-tittle-wrapper">
+                            <div class="product-tittle-content">
+                                <div class="product-tittle-img">
+                                    <img src="https://media.gqmagazine.fr/photos/5d8b7254c7191e00083ebdbb/4:3/w_1440,h_1080,c_limit/como%20hacer%20la%20mejor%20pizza%20del%20mundo.jpg" width="100%" height="180">
+                                </div>
+                                <div class="product-tittle-description">
+                                    <p class="bold-description">Product Title</p>
+                                    <p class="small-description">Space for a small product description </p>
+                                </div>
+                                <div class="product-tittle-button">
+                                    <p class="product-price">1.48 USD</p>
+                                    <div class="product-button">
+                                        <button type="submit" class="buy-now-button">Buy now</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-tittle-content">
+                                <div class="product-tittle-img">
+                                    <img src="https://vokrugsveta.ua/wp-content/uploads/2016/08/shutterstock_371955106.jpg" width="100%" height="180">
+                                </div>
+                                <div class="product-tittle-description">
+                                    <p class="bold-description">Product Title</p>
+                                    <p class="small-description">Space for a small product description </p>
+                                </div>
+                                <div class="product-tittle-button">
+                                    <p class="product-price">1.48 USD</p>
+                                    <div class="product-button">
+                                        <button type="submit" class="buy-now-button">Buy now</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-tittle-content">
+                                <div class="product-tittle-img">
+                                    <img src="https://w0.peakpx.com/wallpaper/1000/106/HD-wallpaper-food-spaghetti-pasta.jpg" width="100%" height="180">
+                                </div>
+                                <div class="product-tittle-description">
+                                    <p class="bold-description">Product Title</p>
+                                    <p class="small-description">Space for a small product description </p>
+                                </div>
+                                <div class="product-tittle-button">
+                                    <p class="product-price">1.48 USD</p>
+                                    <div class="product-button">
+                                        <button type="submit" class="buy-now-button">Buy now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
                 </div>
-                <div class="main-card bottom-card">
-
+                <!-- slider start -->
+                <div class="menu-slider">
+                    <div class="header-blocks">
+                        <h3 class="slider-tittle">Our customers says</h3>
+                        <div class="slider-button-wrapper arrow-right-green">
+                            <button type="submit" class="slider-button">Button</button>
+                        </div>
+                    </div>
+                    <div class="slider-content-wrapper">
+                        <div class="slider-content">
+                            <p class="slider-text">“ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “</p>
+                            <p class="slider-subheading">Name and Surname</p>
+                        </div>
+                        <div class="slider-content">
+                            <p class="slider-text">“ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “</p>
+                            <p class="slider-subheading">Name and Surname</p>
+                        </div>
+                        <div class="slider-content">
+                            <p class="slider-text">“ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “</p>
+                            <p class="slider-subheading">Name and Surname</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- slider end -->
+                <div class="bottom-card-wrapper">
+                    <div class="header-blocks">
+                        <h3 class="slider-tittle">Section Headline</h3>
+                        <div class="slider-button-wrapper arrow-right-green">
+                            <button type="submit" class="slider-button">Button</button>
+                        </div>
+                    </div>  
+                    <div class="product-tittle-wrapper">
+                        <div class="product-tittle-content">
+                            <div class="product-tittle-img">
+                                <img src="https://media.istockphoto.com/id/1220107586/photo/korean-dalgona-coffee-with-milk-whipped-coffee-and-chocolate-chips-on-white-background-close.jpg?b=1&s=170667a&w=0&k=20&c=TjPevKKbDEt_0UbRG4ISA-X2pOzP-CY3rKuyiPVdXPo=" width="100%" height="180">
+                            </div>
+                            <div class="product-tittle-description">
+                                <p class="bold-description">Product Title</p>
+                                <p class="small-description">Space for a small product description </p>
+                            </div>
+                            <div class="product-tittle-button">
+                                <p class="product-price">3.26 USD</p>
+                                <div class="product-button">
+                                    <button type="submit" class="buy-now-button">Buy now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-tittle-content">
+                            <div class="product-tittle-img">
+                                <img src="https://previews.123rf.com/images/yuliaff/yuliaff1803/yuliaff180300634/98716207-raw-fish-seabass-with-condiments-top-view.jpg" width="100%" height="180">
+                            </div>
+                            <div class="product-tittle-description">
+                                <p class="bold-description">Product Title</p>
+                                <p class="small-description">Space for a small product description </p>
+                            </div>
+                            <div class="product-tittle-button">
+                                <p class="product-price">1.48 USD</p>
+                                <div class="product-button">
+                                    <button type="submit" class="buy-now-button">Buy now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-tittle-content">
+                            <div class="product-tittle-img">
+                                <img src="https://www.thegalaxyfood.com/assets/upload/img/00992600.jpg" width="100%" height="180">
+                            </div>
+                            <div class="product-tittle-description">
+                                <p class="bold-description">Product Title</p>
+                                <p class="small-description">Space for a small product description </p>
+                            </div>
+                            <div class="product-tittle-button">
+                                <p class="product-price">0.28 USD</p>
+                                <div class="product-button">
+                                    <button type="submit" class="buy-now-button">Buy now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-tittle-content">
+                            <div class="product-tittle-img">
+                                <img src="https://www.thegalaxyfood.com/assets/upload/img/00992600.jpg" width="100%" height="180">
+                            </div>
+                            <div class="product-tittle-description">
+                                <p class="bold-description">Product Title</p>
+                                <p class="small-description">Space for a small product description </p>
+                            </div>
+                            <div class="product-tittle-button">
+                                <p class="product-price">1.12 USD</p>
+                                <div class="product-button">
+                                    <button type="submit" class="buy-now-button">Buy now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </main>
+            <!-- main end -->
+            <!-- footer-start -->
             <footer class="footer">
                 
             </footer>
+            <!-- footer end -->
         </div>
     </div>
     

@@ -81,7 +81,11 @@
     margin: 72px 0px 16px 0px;
 }
 
-  .category-list a {
+.category-element {
+    position: relative;
+}
+
+  .category-element a {
     padding: 0px 6px 0px 0px ;
     text-decoration: none;
     font-weight: 500;
