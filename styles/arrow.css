@@ -25,8 +25,19 @@
     position: absolute;
     display: block;
     background-color: #6A983C;
-    width: 7px;
+    width: 6px;
     height: 2px;
+    right: -8px;
+}
+
+.arrow-down::before {
+    top:40%;
+    transform: rotate(45deg);
+}
+
+.arrow-down::after {
+    bottom: 40%;
+    transform: rotate(-45deg);
 }
 
 .arrow-right-green::before,

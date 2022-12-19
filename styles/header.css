@@ -81,9 +81,9 @@
     margin: 72px 0px 16px 0px;
 }
 
-.category-element {
-    position: relative;
-}
+  .category-element {
+      position: relative;
+  }
 
   .category-element a {
     padding: 0px 6px 0px 0px ;
@@ -93,4 +93,5 @@
     line-height: 22px;
     color: #151515;
   }
-  
+
+ 
