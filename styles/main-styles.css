@@ -327,7 +327,7 @@ dd {
   display: flex;
   gap: 36px;
   flex-wrap: wrap;
-  padding: 20px 0px 95px 0px;
+  padding: 20px 15px 95px 15px;
 }
 
 .footer-tag {
