@@ -52,6 +52,7 @@
 }
 
 .button-card {
+    position: relative;
     padding: 12px 38px 12px 16px;
     border: 2px solid #92C064;
     border-radius: 12px;
@@ -62,6 +63,28 @@
     line-height: 22px;
     color: #151515;
 }
+
+.button-card::before,
+.button-card::after  {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 7px;
+  height: 3px;
+  left: 85%;
+  background-color: #6A983C;
+}
+
+.button-card::before {
+    top: 43%;
+    transform: rotate(45deg);
+}
+
+.button-card::after {
+    bottom: 42%;
+    transform: rotate(-45deg);
+}
+
 
 .card-banner-wrapper {
     display: flex;

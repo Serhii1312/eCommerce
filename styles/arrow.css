@@ -61,3 +61,48 @@
     transform: rotate(-45deg);
   }
 
+  .side-button-left::before,
+  .side-button-left::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 11px;
+    height: 3px;
+    background-color: #FFFFFF;
+    left: 10px;
+    border-radius: 2px;
+  }
+  
+  .side-button-left::before {
+    bottom: 54%;
+    transform: rotate(-45deg);
+  
+  }
+  
+  .side-button-left::after {
+    top: 54%;
+    transform: rotate(45deg);
+  }
+  
+  .side-button-right::before,
+  .side-button-right::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 11px;
+    height: 3px;
+    background-color: #FFFFFF;
+    left: 10px;
+    border-radius: 2px;
+  }
+  
+  .side-button-right::before {
+    bottom: 54%;
+    transform: rotate(45deg);
+  
+  }
+  
+  .side-button-right::after {
+    top: 54%;
+    transform: rotate(-45deg);
+  }

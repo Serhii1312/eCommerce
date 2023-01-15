@@ -1,6 +1,6 @@
-let name = "Сергій";
+let username = "Сергій";
 let age = 21;
 
-name = "Serhii"
+username = "Serhii"
 
-console.log(name, age);
+console.log(username, age);
