@@ -18,7 +18,7 @@
 </head>
 <body>
     <div class="container">
-        <div class="main-wrapper">
+        <div class="site-wrapper">
             <!-- header start -->
             <header class="header">
                 <div class="header-top">
@@ -38,70 +38,75 @@
                         <img src="../../img/Freshnesecom.jpg" class="header-img" alt="word">
                     </a>
                     <form action="#" method="post" enctype="multipart/form-data">
-                        <div class="search-input-wrapper">
-                            <div class="search-input-list">
-                                 <span class="search-list">All categories</span>
-                            </div>
-                            <div class="input-wrapper">
-                                <input type="text" class="search-input" id="text" name="input-text" placeholder="Search Products, categories ...">
-                            </div>
-                            <button type="submit" class="search-input-button">
+                        <div class="search-form">
+                            <select class="search-form-categories" name="category">
+                                <option value="test" selected>All categories</option>
+                                <option value="test">Fruit and vegetables</option>
+                                <option value="test">Meat and fish</option>
+                                <option value="test">Drinks</option>
+                                <option value="test">Kitchen</option>
+                            </select>
+                            <input type="text" class="search-form-input" id="text" name="input-text" placeholder="Search Products, categories ...">
+                            <button type="submit" class="search-form-submit">
                                 <i class="fa-solid fa-magnifying-glass"></i>
                             </button>
                         </div>
                     </form>
                     <div class="header-icons">
-                        <i class="fa-solid fa-user header-icon"></i>
-                        <i class="fa-solid fa-bag-shopping header-icon"></i>
-
+                        <div class="user-icon-wrapper">
+                            <i class="fa-solid fa-user header-icon"></i>
+                        </div>
+                        <div class="shopping-card-wrapper">
+                            <i class="fa-solid fa-bag-shopping header-icon"></i>
+                            <span class="icon-number">4</span>
+                        </div>   
                     </div>
                 </div>
                 <div class="header-bottom">
-                    <ul class="category-lists">
-                        <li class="category-element arrow-down"><a href="/pages/Category/index.html" target="blank">Bakery</a></li>
-                        <li class="category-element arrow-down"><a href="#">Fruit and vegetables</a></li>
-                        <li class="category-element arrow-down"><a href="#">Meat and fish</a></li>
-                        <li class="category-element arrow-down"><a href="#">Drinks</a></li>
-                        <li class="category-element arrow-down"><a href="#">Kitchen</a></li>
-                        <li class="category-element arrow-down"><a href="#">Special nutrition</a></li>
-                        <li class="category-element arrow-down"><a href="#">Baby</a></li>
-                        <li class="category-element arrow-down"><a href="#">Pharmacy</a></li>
+                    <ul class="header-category-lists">
+                        <li class="header-category-element"><a href="/pages/Category/index.html" target="blank" class="arrow-down">Bakery</a></li>
+                        <li class="header-category-element"><a href="#" class="arrow-down">Fruit and vegetables</a></li>
+                        <li class="header-category-element"><a href="#" class="arrow-down">Meat and fish</a></li>
+                        <li class="header-category-element"><a href="#" class="arrow-down">Drinks</a></li>
+                        <li class="header-category-element"><a href="#" class="arrow-down">Kitchen</a></li>
+                        <li class="header-category-element"><a href="#" class="arrow-down">Special nutrition</a></li>
+                        <li class="header-category-element"><a href="#" class="arrow-down">Baby</a></li>
+                        <li class="header-category-element"><a href="#" class="arrow-down">Pharmacy</a></li>
                     </ul>
                 </div>
             </header>
             <!-- header end -->
             <!-- main start -->
             <main class="main">
-                <div class="main-card top-card">
-                    <div class="main-card-wrapper">
+                    <section class="main-banner-wrapper">
                         <!-- side menu start -->
                         <div class="side-menu">
-                            <h3 class="menu-tittle">Category menu</h3>
-                            <ul class="category-menu">
-                                <li class="menu-list"><a href="#">Bakery</a></li>
-                                <li class="menu-list"><a href="#">Fruit and vegetables</a></li>
-                                <li class="menu-list"><a href="#">Meat and fish</a></li>
-                                <li class="menu-list"><a href="#">Drinks</a></li>
-                                <li class="menu-list"><a href="#">Kitchen</a></li>
+                            <h3 class="side-menu-tittle">Category menu</h3>
+                            <ul class="side-menu-list">
+                                <li class="side-menu-item"><a href="#">Bakery</a></li>
+                                <li class="side-menu-item"><a href="#">Fruit and vegetables</a></li>
+                                <li class="side-menu-item"><a href="#">Meat and fish</a></li>
+                                <li class="side-menu-item"><a href="#">Drinks</a></li>
+                                <li class="side-menu-item"><a href="#">Kitchen</a></li>
                             </ul>
-                            <div class="button-wrapper-card">
-                                <button type="submit" class="menu-button-wrapper arrow-right">More categories</button>
+                            <div class="side-button-wrapper">
+                                <button type="submit" class="side-menu-button arrow-right">More categories</button>
                             </div> 
                         </div> 
                         <!-- side menu end -->
                         <div class="card-banner-wrapper">    
-                            <div class="card-banner">
-                                <div class="banner-content">
-                                    <span class="card-text">Banner subfocus</span>
+                            <div class="card-banner-content">
+                                <div class="card-banner-info">
+                                    <span class="card-banner-text">Banner subfocus</span>
                                     <h3 class="card-banner-tittle">Space for heading</h3>
                                 </div>
                                 <div class="card-button-wrapper">
                                     <button class="button-card">Read recepies</button>  
                                 </div>    
                             </div> 
-                            <div class="card-banner">
-                                <div class="banner-content">
-                                    <span class="card-text">Banner subfocus</span>
+                            <div class="card-banner-content">
+                                <div class="card-banner-info">
+                                    <span class="card-banner-text">Banner subfocus</span>
                                     <h3 class="card-banner-tittle">Space for heading</h3>
                                 </div>
                                 <div class="card-button-wrapper">
@@ -109,23 +114,20 @@
                                 </div>
                             </div>
                         </div>
-                        
-                    </div>
-                </div>
-                <div class="main-card middle-card">
-                   <div class="middle-card-wrapper"> 
+                    </section>
+                   <section class="middle-card-wrapper"> 
                         <!-- side menu start -->
                         <div class="side-menu">
-                            <h3 class="menu-tittle">Best selling products</h3>
-                            <ul class="category-menu">
-                                <li class="menu-list"><a href="#">Kitchen</a></li>
-                                <li class="menu-list"><a href="#">Meat and fish</a></li>
-                                <li class="menu-list"><a href="#">Special nutrition</a></li>
-                                <li class="menu-list"><a href="#">Pharmacy</a></li>
-                                <li class="menu-list"><a href="#">Baby</a></li>
+                            <h3 class="side-menu-tittle">Best selling products</h3>
+                            <ul class="side-menu-list">
+                                <li class="side-menu-item"><a href="#">Kitchen</a></li>
+                                <li class="side-menu-item"><a href="#">Meat and fish</a></li>
+                                <li class="side-menu-item"><a href="#">Special nutrition</a></li>
+                                <li class="side-menu-item"><a href="#">Pharmacy</a></li>
+                                <li class="side-menu-item"><a href="#">Baby</a></li>
                             </ul>
                             <div class="button-wrapper-tittle">
-                                <button type="submit" class="menu-button-wrapper arrow-right">More products</button>
+                                <button type="submit" class="side-menu-button arrow-right">More products</button>
                             </div> 
                         </div> 
                         <!-- side menu end -->
@@ -182,20 +184,20 @@
                                 </div>
                             </div>
                         </div>
-                   </div>  
-                   <div class="middle-card-wrapper"> 
+                   </section>  
+                   <section class="middle-card-wrapper"> 
                         <!-- side menu start -->
                         <div class="side-menu">
-                            <h3 class="menu-tittle">Best from Farmers</h3>
-                            <ul class="category-menu">
-                                <li class="menu-list"><a href="#">Carrots</a></li>
-                                <li class="menu-list"><a href="#">Tomatoes</a></li>
-                                <li class="menu-list"><a href="#">Potatoes</a></li>
-                                <li class="menu-list"><a href="#">Chicken</a></li>
-                                <li class="menu-list"><a href="#">Pork</a></li>
+                            <h3 class="side-menu-tittle">Best from Farmers</h3>
+                            <ul class="side-menu-list">
+                                <li class="side-menu-item"><a href="#">Carrots</a></li>
+                                <li class="side-menu-item"><a href="#">Tomatoes</a></li>
+                                <li class="side-menu-item"><a href="#">Potatoes</a></li>
+                                <li class="side-menu-item"><a href="#">Chicken</a></li>
+                                <li class="side-menu-item"><a href="#">Pork</a></li>
                             </ul>
                             <div class="button-wrapper-tittle">
-                                <button type="submit" class="menu-button-wrapper arrow-right">More products</button>
+                                <button type="submit" class="side-menu-button arrow-right">More products</button>
                             </div> 
                         </div> 
                         <!-- side menu end -->
@@ -252,14 +254,13 @@
                                 </div>
                             </div>
                         </div>
-                    </div>   
-                </div>
+                   </section>   
                 <!-- slider start -->
-                <div class="menu-slider">
-                    <div class="header-blocks header-slider">
-                        <h3 class="tittle-card">Our customers says</h3>
-                        <div class="slider-button-wrapper arrow-right-green">
-                            <button type="submit" class="slider-button">Button</button>
+                <section class="menu-slider">
+                    <div class="header-section header-slider">
+                        <h3 class="section-tittle">Our customers says</h3>
+                        <div class="section-btn-wrapper arrow-right-green">
+                            <button type="submit" class="section-btn">Button</button>
                         </div>
                     </div>
                     <div class="slider-content-wrapper">
@@ -281,14 +282,13 @@
                         </div>
                         <button type="submit" class="side-button side-button-right side-button-arrow"></button>
                     </div>
-                    <!-- main card end -->
-                </div>
-                
-                <div class="bottom-card-wrapper">
-                    <div class="header-blocks">
-                        <h3 class="tittle-card">Section Headline</h3>
-                        <div class="slider-button-wrapper arrow-right-green">
-                            <button type="submit" class="slider-button">Button</button>
+                </section>
+                <!--slider end-->
+                <section class="bottom-card-wrapper">
+                    <div class="header-section">
+                        <h3 class="section-tittle">Section Headline</h3>
+                        <div class="section-btn-wrapper arrow-right-green">
+                            <button type="submit" class="section-btn">Button</button>
                         </div>
                     </div>  
                     <div class="product-tittle-wrapper">
@@ -356,17 +356,17 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
                 <!-- last card start -->
-                <div class="last-card-wrapper">
-                    <div class="header-blocks">
-                        <h3 class="tittle-card">Read our Blog posts</h3>
-                        <div class="slider-button-wrapper arrow-right-green">
-                            <button type="submit" class="slider-button">Go to Blog</button>
+                <section class="blog-wrapper">
+                    <div class="header-section">
+                        <h3 class="section-tittle">Read our Blog posts</h3>
+                        <div class="section-btn-wrapper arrow-right-green">
+                            <button type="submit" class="section-btn">Go to Blog</button>
                         </div>
                     </div>
-                    <div class="last-card-container">
-                        <div class="last-card-blog">
+                    <div class="blog-container">
+                        <div class="blog-card-left">
                             <img src="https://i.pinimg.com/736x/f3/c1/77/f3c177a104a41f8335052f0ede71d3af--pickled-onions-black-sesame.jpg"  class="blog-img" width="100%">
                             <p class="blog-text">Dinner tips</p>
                             <div class="blog-info">
@@ -378,57 +378,57 @@
                                 </div> 
                             </div>
                         </div>
-                        <div class="last-card-text">
+                        <div class="blog-card-center">
                             <div class="card-img-container">
                                 <img src="https://realfood.tesco.com/media/images/RFO-1400x919-BreakfastBurrito-9f666487-44b7-430b-a34b-f91774309021-0-1400x919.jpg" width="100%">   
                             </div>
                             <span class="card-text">Vegetable</span>
-                            <h3 class="tittle-card">Which vegetable your family will love and want’s eat each day</h3>
+                            <h3 class="section-tittle">Which vegetable your family will love and want’s eat each day</h3>
                             <div class="card-tittle">  
                                 <p class="tittle-info">Author</p>
                                 <p class="tittle-time">14.01.2020</p>
                             </div>      
                         </div>
-                        <ul class="last-card-description">
-                            <li class="last-card-tittle">
-                                <div class="last-card-content">
-                                    <h3 class="tittle-text">Salat is kinda good start to your morning routines</h3>
+                        <ul class="blog-card-right">
+                            <li class="blog-card-list">
+                                <div class="blog-right-content">
+                                    <h3 class="blog-tittle-text">Salat is kinda good start to your morning routines</h3>
                                     <div class="card-tittle">  
                                         <p class="tittle-info">Author</p>
                                         <p class="tittle-time">14.01.2020</p>
                                     </div>      
                                 </div>
-                                <div class="last-card-img">
+                                <div class="blog-right-img">
                                     <img src="https://dinnerthendessert.com/wp-content/uploads/2019/10/Winter-Fruit-Salad-2.jpg"  >
                                 </div>
                             </li>
-                            <li class="last-card-tittle">
-                                <div class="last-card-content">
-                                    <h3 class="tittle-text">Our chef tips for a great and healthy breakfast</h3>
+                            <li class="blog-card-list">
+                                <div class="blog-right-content">
+                                    <h3 class="blog-tittle-text">Our chef tips for a great and healthy breakfast</h3>
                                     <div class="card-tittle">  
                                         <p class="tittle-info">Author</p>
                                         <p class="tittle-time">14.01.2020</p>
                                     </div>      
                                 </div>
-                                <div class="last-card-img">
+                                <div class="blog-right-img">
                                     <img src="https://dinnerthendessert.com/wp-content/uploads/2019/10/Winter-Fruit-Salad-2.jpg">
                                 </div>    
                             </li>
-                            <li class="last-card-tittle">
-                                <div class="last-card-content">
-                                    <h3 class="tittle-text">Prepare a simple and delicious breads</h3>
+                            <li class="blog-card-list">
+                                <div class="blog-right-content">
+                                    <h3 class="blog-tittle-text">Prepare a simple and delicious breads</h3>
                                     <div class="card-tittle">  
                                         <p class="tittle-info">Author</p>
                                         <p class="tittle-time">14.01.2020</p>
                                     </div>      
                                 </div>
-                                <div class="last-card-img">
+                                <div class="blog-right-img">
                                     <img src="https://dinnerthendessert.com/wp-content/uploads/2019/10/Winter-Fruit-Salad-2.jpg">
                                 </div>   
                             </li>
                         </ul>
                     </div>
-                </div>
+                </section>
                 <!-- last card end -->
             </main>
             <!-- main end -->
@@ -437,7 +437,7 @@
                 <!-- footer div start -->
                 <div class="footer-div">
                     <div class="footer-block">
-                        <h3 class="tittle-card">Get in touch</h3>
+                        <h3 class="section-tittle">Get in touch</h3>
                         <ul class="footer-list">
                             <li class="footer-element"><a href="#">About Us</a></li>
                             <li class="footer-element"><a href="#">Careers</a></li>
@@ -446,7 +446,7 @@
                         </ul>
                     </div>
                     <div class="footer-block">
-                        <h3 class="tittle-card">Connections</h3>
+                        <h3 class="section-tittle">Connections</h3>
                         <ul class="footer-list">
                             <li class="footer-element"><a href="#">Facebook</a></li>
                             <li class="footer-element"><a href="#">Twitter</a></li>
@@ -456,7 +456,7 @@
                         </ul>
                     </div>
                     <div class="footer-block">
-                        <h3 class="tittle-card">Earnings</h3>
+                        <h3 class="section-tittle">Earnings</h3>
                         <ul class="footer-list">
                             <li class="footer-element"><a href="#">Become an Affiliate</a></li>
                             <li class="footer-element"><a href="#">Advertise your product</a></li>
@@ -464,7 +464,7 @@
                         </ul>
                     </div>
                     <div class="footer-block">
-                        <h3 class="tittle-card">Account</h3>
+                        <h3 class="section-tittle">Account</h3>
                         <ul class="footer-list">
                             <li class="footer-element"><a href="#">Your account</a></li>
                             <li class="footer-element"><a href="#">Returns Centre</a></li>
@@ -476,7 +476,7 @@
                 </div>
                 <!-- footer div end -->
                 <div class="footer-tags-wrapper">
-                    <h3 class="tittle-card">Product tags</h3>
+                    <h3 class="section-tittle">Product tags</h3>
                     <div class="footer-tags">
                         <p class="footer-tag">Beans</p>
                         <p class="footer-tag">Carrots</p>

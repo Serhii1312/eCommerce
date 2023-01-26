@@ -27,17 +27,19 @@
     background-color: #6A983C;
     width: 6px;
     height: 2px;
-    right: -8px;
+    
 }
 
 .arrow-down::before {
-    top:40%;
-    transform: rotate(45deg);
+  top: 50%;
+  right: -6px;
+  transform: rotate(-133deg);
 }
 
 .arrow-down::after {
-    bottom: 40%;
-    transform: rotate(-45deg);
+  bottom: 40%;
+  right: -9px;
+  transform: rotate(130deg);
 }
 
 .arrow-right-green::before,
@@ -52,12 +54,12 @@
 }
 
 .arrow-right-green::before {
-    top: 40%;
+    top: 41%;
     transform: rotate(45deg);
   }
   
   .arrow-right-green::after {
-    bottom: 40%;
+    bottom: 42%;
     transform: rotate(-45deg);
   }
 

@@ -13,7 +13,7 @@
   }
   
   .footer-element a {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -21,21 +21,33 @@
     color: #6A983C;
     text-decoration: none;
   }
+
+  .footer-element a:hover {
+    text-decoration: underline;
+  }
   
   .footer-tags {
     display: flex;
-    gap: 36px;
+    gap: 22px;
     flex-wrap: wrap;
     padding: 20px 15px 95px 15px;
   }
   
   .footer-tag {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
     line-height: 18px;
     color: #151515;
+    padding: 4px 10px;
+  }
+
+  .footer-tag:hover {
+    background-color: #d1d1d1;
+    border-radius: 12px;
+    transition: background-color .3s ease;
+    cursor: pointer;
   }
   
   .page-copyright {
