@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../../styles/header.css">
+    <link rel="stylesheet" href="../../styles/main-card-styles.css">
+    <link rel="stylesheet" href="../../styles/main-styles.css">
+    <link rel="stylesheet" href="../../styles/footer.css">
+    <link rel="stylesheet" href="../../styles/arrow.css">
+    <link rel="stylesheet" href="/eCommerce/styles/menu-option.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <div class="container">
+        <div class="site-wrapper">
+              <!-- header start -->
+              <header class="header">
+                <div class="header-top">
+                    <div class="header-contacts">
+                        <a href="#">Chat with us</a>
+                        <a href="#">+420 336 775 664</a>
+                        <a href="#">time@freshnesecom.com</a>
+                    </div>
+                    <div class="header-links">
+                        <a href="#" class="header-link">Blog</a>
+                        <a href="#" class="header-link">About Us</a>
+                        <a href="#" class="header-link">Careers</a>
+                    </div>
+                </div>
+                <div class="header-middle">
+                    <a href="#">
+                        <img src="/eCommerce/img/Freshnesecom.jpg" class="header-img" alt="word">
+                    </a>
+                    <form action="#" method="post" enctype="multipart/form-data">
+                        <div class="search-form">
+                            <select class="search-form-categories" name="category">
+                                <option value="test" selected>All categories</option>
+                                <option value="test">Fruit and vegetables</option>
+                                <option value="test">Meat and fish</option>
+                                <option value="test">Drinks</option>
+                                <option value="test">Kitchen</option>
+                            </select>
+                            <input type="text" class="search-form-input" id="text" name="input-text" placeholder="Search Products, categories ...">
+                            <button type="submit" class="search-form-submit">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                    </form>
+                    <div class="header-icons">
+                        <div class="user-icon-wrapper">
+                            <i class="fa-solid fa-user header-icon"></i>
+                        </div>
+                        <div class="shopping-card-wrapper">
+                            <i class="fa-solid fa-bag-shopping header-icon"></i>
+                            <span class="icon-number">4</span>
+                        </div>   
+                    </div>
+                </div>
+                <div class="header-bottom">
+                    <ul class="header-category-lists">
+                        <li class="header-category-element"><a href="/eCommerce/pages/Homepage/index.html" class="arrow-down">Bakery</a></li>
+                        <li class="header-category-element"><a href="#" class="arrow-down">Fruit and vegetables</a></li>
+                        <li class="header-category-element"><a href="#" class="arrow-down">Meat and fish</a></li>
+                        <li class="header-category-element"><a href="#" class="arrow-down">Drinks</a></li>
+                        <li class="header-category-element"><a href="#" class="arrow-down">Kitchen</a></li>
+                        <li class="header-category-element"><a href="#" class="arrow-down">Special nutrition</a></li>
+                        <li class="header-category-element"><a href="#" class="arrow-down">Baby</a></li>
+                        <li class="header-category-element"><a href="#" class="arrow-down">Pharmacy</a></li>
+                    </ul>
+                </div>
+            </header>
+            <!-- header end -->
+            <section class="menu-option">
+                <div class="menu-wrapper">
+                    <p class="menu-text">Homepage /
+                        <span>Fruit and vegetables</span>
+                    </p>
+                </div>
+                <div class="menu-header">
+                    <h2 class="menu-title">Fruit and vegetables</h2>
+                    <div class="menu-view">
+                        <button class="button-view"><i class="fa-regular fa-table-cells-large"></i>Grid view</button>
+                        <button class="button-view"><i class="fa-sharp fa-regular fa-table-list"></i>List view</button>
+                        <button class="button-view products-view">Products</button>
+                    </div>
+                </div>
+                <form action="#" method="post" enctype="multipart/form-data" class="menu-form">
+                    <div class="menu-radios">
+                        <input type="radio" class="radio-input" id="radio" name="radio">
+                        <label class="radio-text" for="radio"> Filtre text</label>  
+                        <input type="radio" class="radio-input" id="radio" name="radio">
+                        <label class="radio-text" for="radio">Filtre text</label>
+                    </div>
+                    <div class="menu-radios">
+                        <input type="checkbox" id="checkbox" name="checkbox" class="menu-checkbox">
+                        <label for="checkbox" class="radio-text checkbox-text">Filtre</label>
+                    </div>
+                    <div class="menu-radios">
+                        <input type="checkbox" id="checkbox" name="checkbox" class="menu-checkbox">
+                        <label for="checkbox" class="radio-text checkbox-text">Filtre</label>
+                    </div>
+                    <div class="menu-radios">
+                        <input type="checkbox" id="checkbox" name="checkbox" class="menu-checkbox">
+                        <label for="checkbox" class="radio-text checkbox-number">Filtre</label>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

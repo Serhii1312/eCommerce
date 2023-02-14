@@ -1,0 +1,133 @@
+ i {
+    font-family: fontawesome !important;
+
+}
+
+
+.menu-text {
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 20px;
+    padding-bottom: 16px;
+    font-size: 12px;
+    line-height: 16px;
+    color: #A9A9A9;
+}
+
+.menu-text span {
+    color: #151515;
+}
+
+.menu-header {
+    display:flex;
+    justify-content: space-between;
+    
+}
+
+.menu-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    color: #151515;
+}
+
+.menu-view {
+    display: flex;
+    position: relative;
+    align-self: center;
+    gap: 50px;
+}
+
+.button-view {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #A9A9A9;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.button-view:hover {
+    color: #151515;
+}
+
+.button-view i {
+    color: #6A983C;
+    font-size: 17px;
+    vertical-align: -2px;
+    margin-right: 5px;
+}
+
+.products-view {
+    margin-left: 20px;
+}
+
+.products-view::before {
+    content: '117';
+    position: absolute;
+    top: 0;
+    right: 53px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: #6A983C;
+    background-color: #F4F8EC;
+    border-radius: 12px;
+    padding: 0px 8px;
+}
+
+.menu-form {
+    display: flex;
+}
+
+.menu-radios {
+    display: flex;
+    gap: 15px;
+    background: #F9F9F9;
+    border: 1px solid #D1D1D1;
+    border-radius: 12px;
+    padding: 12px;
+}
+
+.radio-text {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 19px;
+    color: #151515;
+}
+
+
+.checkbox-text::after {
+    content: 'Nbm';
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: #151515;
+    background: #F9F9F9;
+    border: 1px solid #D1D1D1;
+    border-radius: 12px;
+    padding: 1px 10px;
+}
+
+
+.checkbox-number::after {
+    content: '12';
+    height: 18px;
+    right: -40px;
+    top: 3px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: #151515;
+    position: absolute;
+    padding: 0 8px;
+    border: 1px solid #EBEBEB;
+    border-radius: 12px;
+}
