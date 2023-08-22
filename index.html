@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./styles/main-styles.css">
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/arrow.css">
+    <link rel="stylesheet" href="./styles/shopping-cart.css">
+    <link rel="stylesheet" href="./styles/pop-up.css    ">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -56,11 +58,40 @@
                         <div class="user-icon-wrapper">
                             <i class="fa-solid fa-user header-icon"></i>
                         </div>
-                        <div class="shopping-card-wrapper">
+                        <div class="shopping-card-wrapper" id="cart-open">
                             <i class="fa-solid fa-bag-shopping header-icon"></i>
                             <span class="icon-number">4</span>
-                        </div>   
+                        </div> 
+                        <div class="cart-wrapper">
+                        <div class="cart-shopping" id="cart-shopping">
+                            <div class="cart-container">
+                                <div class="cart-header">
+                                    <h3 class="cart-header-title">Shopping Cart</h3>
+                                    <p class="cart-remove" id="cart-remove">Remove all</p>
+                                </div>
+                                <div class="cart-content-wrapper">
+                                   <div class="cart-content-item"> 
+                                        <div class="cart-img-wrapper">
+                                            <img src="https://static9.depositphotos.com/1720101/1200/i/450/depositphotos_12002700-stock-photo-chocolate-moose.jpg"/>
+                                        </div>
+                                        <h2 class="cart-content-title"  data-id="">Product title</h2>
+                                        <div class="cart-count-wrapper">
+                                            <span class="count-button" data-action="plus">+</span>
+                                            <p class="number-count" data-counter>1</p>
+                                            <span class="count-button"data-action="minus">-</span>
+                                        </div>
+                                        <div class="cart-info">
+                                            <span class="cart-price">$2.99</span>
+                                            <p class="cart-remove">Remove</p>
+                                        </div> 
+                                    </div>
+                                </div> 
+                                <p class="cart-total-price">Total: 0</p>   
+                            </div>
+                        </div>
+                        </div>
                     </div>
+                
                 </div>
                 <div class="header-bottom">
                     <ul class="header-category-lists">
@@ -101,8 +132,19 @@
                                     <h3 class="card-banner-tittle">Space for heading</h3>
                                 </div>
                                 <div class="card-button-wrapper">
-                                    <button class="button-card">Read recepies</button>  
+                                    <a href="#" class="open-pop"><button class="button-card">Read recepies</button></a>
                                 </div>    
+                                <div class="pop-up" id="pop-up">
+                                    <div class="pop-container">
+                                        <div class="pop-body" id="pop-body">
+                                            <h2 class="pop-title">Dish recipe</h2>
+                                            <p class="pop-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+                                            <div class="pop-close" id="pop-close">
+                                                <i class="fa-regular fa-circle-xmark fa-xl" style="color: #32b503;"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div> 
                             <div class="card-banner-content">
                                 <div class="card-banner-info">
@@ -110,7 +152,7 @@
                                     <h3 class="card-banner-tittle">Space for heading</h3>
                                 </div>
                                 <div class="card-button-wrapper">
-                                    <button class="button-card">Read recepies</button>
+                                    <a href="#" class="open-pop"><button class="button-card">Read recepies</button></a>
                                 </div>
                             </div>
                         </div>
@@ -132,24 +174,24 @@
                         </div> 
                         <!-- side menu end -->
                         <div class="product-tittle-wrapper">
-                            <div class="product-tittle-content">
+                            <div class="product-tittle-content" data-id="01">
                                 <div class="product-tittle-img">
-                                    <img src="https://cdn.shopify.com/s/files/1/0084/6158/2372/products/bone-in_ribeye_2_1600x.jpg?v=1566389835" width="100%" height="180">
+                                    <img class="product-img" src="https://cdn.shopify.com/s/files/1/0084/6158/2372/products/bone-in_ribeye_2_1600x.jpg?v=1566389835" width="100%" height="180">
                                 </div>
                                 <div class="product-tittle-description">
                                     <p class="bold-description">Product Title</p>
                                     <p class="small-description">Space for a small product description </p>
                                 </div>
                                 <div class="product-tittle-button">
-                                    <p class="product-price">1.48 USD</p>
+                                    <p class="product-price">3 USD</p>
                                     <div class="product-button">
-                                        <button type="submit" class="buy-now-button">Buy now</button>
+                                        <button data-cart type="submit" class="buy-now-button">Buy now</button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="product-tittle-content">
+                            <div class="product-tittle-content" data-id="02">
                                 <div class="product-tittle-img img-block">
-                                    <img src="https://previews.123rf.com/images/yuliaff/yuliaff1803/yuliaff180300634/98716207-raw-fish-seabass-with-condiments-top-view.jpg" width="100%" height="180">
+                                    <img class="product-img" src="https://previews.123rf.com/images/yuliaff/yuliaff1803/yuliaff180300634/98716207-raw-fish-seabass-with-condiments-top-view.jpg" width="100%" height="180">
                                 </div>
                                 <div class="product-tittle-description">
                                     <p class="bold-description">Product Title</p>
@@ -157,29 +199,29 @@
                                 </div>
                                 <div class="product-tittle-button">
                                     <div class="product-prices">
-                                        <p class="product-price">1.48 USD</p>
+                                        <p class="product-price">3 USD</p>
                                         <p class="product-discount">48.56</p>
                                     </div>
                                     <div class="product-button">
-                                        <button type="submit" class="buy-now-button">Buy now</button>
+                                        <button data-cart type="submit" class="buy-now-button">Buy now</button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="product-tittle-content">
+                            <div class="product-tittle-content" data-id="03">
                                 <div class="product-tittle-img img-block">
-                                    <img src="https://www.thegalaxyfood.com/assets/upload/img/00992600.jpg" width="100%" height="180">
-                                </div>
+                                    <img class="product-img" src="https://www.thegalaxyfood.com/assets/upload/img/00992600.jpg" width="100%" height="180">
+                                </div> 
                                 <div class="product-tittle-description">
                                     <p class="bold-description">Product Title</p>
                                     <p class="small-description">Space for a small product description </p>
                                 </div>
                                 <div class="product-tittle-button">
                                     <div class="product-prices">
-                                        <p class="product-price">1.48 USD</p>
+                                        <p class="product-price">3 USD</p>
                                         <p class="product-discount">48.56</p>
                                     </div>
                                     <div class="product-button">
-                                        <button type="submit" class="buy-now-button">Buy now</button>
+                                        <button data-cart type="submit" class="buy-now-button">Buy now</button>
                                     </div>
                                 </div>
                             </div>
@@ -202,24 +244,24 @@
                         </div> 
                         <!-- side menu end -->
                         <div class="product-tittle-wrapper">
-                            <div class="product-tittle-content">
+                            <div class="product-tittle-content" data-id="04">
                                 <div class="product-tittle-img">
-                                    <img src="https://media.gqmagazine.fr/photos/5d8b7254c7191e00083ebdbb/4:3/w_1440,h_1080,c_limit/como%20hacer%20la%20mejor%20pizza%20del%20mundo.jpg" width="100%" height="180">
+                                    <img class="product-img" src="https://media.gqmagazine.fr/photos/5d8b7254c7191e00083ebdbb/4:3/w_1440,h_1080,c_limit/como%20hacer%20la%20mejor%20pizza%20del%20mundo.jpg" width="100%" height="180">
                                 </div>
                                 <div class="product-tittle-description">
                                     <p class="bold-description">Product Title</p>
                                     <p class="small-description">Space for a small product description </p>
                                 </div>
                                 <div class="product-tittle-button">
-                                    <p class="product-price">1.48 USD</p>
+                                    <p class="product-price">3 USD</p>
                                     <div class="product-button">
-                                        <button type="submit" class="buy-now-button">Buy now</button>
+                                        <button data-cart type="submit" class="buy-now-button">Buy now</button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="product-tittle-content">
+                            <div class="product-tittle-content" data-id="05">
                                 <div class="product-tittle-img img-block">
-                                    <img src="https://vokrugsveta.ua/wp-content/uploads/2016/08/shutterstock_371955106.jpg" width="100%" height="180">
+                                    <img class="product-img" src="https://vokrugsveta.ua/wp-content/uploads/2016/08/shutterstock_371955106.jpg" width="100%" height="180">
                                 </div>
                                 <div class="product-tittle-description">
                                     <p class="bold-description">Product Title</p>
@@ -227,17 +269,17 @@
                                 </div>
                                 <div class="product-tittle-button">
                                     <div class="product-prices">
-                                        <p class="product-price">1.48 USD</p>
+                                        <p class="product-price">3 USD</p>
                                         <p class="product-discount">48.56</p>
                                     </div>
                                     <div class="product-button">
-                                        <button type="submit" class="buy-now-button">Buy now</button>
+                                        <button data-cart type="submit" class="buy-now-button">Buy now</button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="product-tittle-content">
+                            <div class="product-tittle-content" data-id="06">
                                 <div class="product-tittle-img img-block">
-                                    <img src="https://w0.peakpx.com/wallpaper/1000/106/HD-wallpaper-food-spaghetti-pasta.jpg" width="100%" height="180">
+                                    <img class="product-img" src="https://w0.peakpx.com/wallpaper/1000/106/HD-wallpaper-food-spaghetti-pasta.jpg" width="100%" height="180">
                                 </div>
                                 <div class="product-tittle-description">
                                     <p class="bold-description">Product Title</p>
@@ -245,11 +287,11 @@
                                 </div>
                                 <div class="product-tittle-button">
                                     <div class="product-prices">
-                                        <p class="product-price">1.48 USD</p>
+                                        <p class="product-price">3 USD</p>
                                         <p class="product-discount">48.56</p>
                                     </div>
                                     <div class="product-button">
-                                        <button type="submit" class="buy-now-button">Buy now</button>
+                                        <button data-cart type="submit" class="buy-now-button">Buy now</button>
                                     </div>
                                 </div>
                             </div>
